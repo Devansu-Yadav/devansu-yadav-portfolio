@@ -4,14 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devansu Yadav portfolio</title>
+    <title>My Portfolio Component Library</title>
+    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js" data-stencil-namespace="ionicons"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js" data-stencil-namespace="ionicons"></script>
 </head>
 <body>
-    Hi, I am Devansu! I am a sophomore studying CS at the University Of Mumbai.
-    I am a Web Developer🕸 and I aspire to become a Software Developer👨‍💻
-    <h1>My Projects:-</h1>
-    <ol>1.CLI app using Nodejs</ol>
-    <ol>2.SATARK</ol>
-    <ol>3.Checkstyle</ol> 
+    <!-- Nav Bar -->
+    <nav class="navigation container">
+        <ul class="nav-pills">
+            <li class="list-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">Projects</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">Blogs</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Section containing option to change personal theme wil be below -->
+    <section class="section-theme">
+        <div class="personalize-theme">
+            <div class="toggle"></div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const toggle = document.querySelector(".toggle");
+
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const currentTheme = localStorage.getItem("theme");
+
+        if(currentTheme == "dark") {
+            document.body.classList.toggle("dark-mode");
+        } else if(currentTheme == "light") {
+            document.body.classList.toggle("light-mode");
+        }
+
+        toggle.addEventListener("click", () => {
+            if(prefersDarkScheme.matches) {
+                document.body.classList.toggle("light-mode");
+
+                var theme = document.body.classList.contains("light-mode")? "light" : "dark";
+            } else {
+                document.body.classList.toggle("dark-mode");
+
+                var theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+            }
+            
+            localStorage.setItem("theme", theme);
+        });
+    </script>
+
+    <!-- Header Section -->
+    <header class="hero-container">
+        <div class="hero">
+            <div>
+                <h1 id="header-name">Devansu Yadav</h1>
+                <p id="header-tagline">Web Developer | Hackathons👨‍💻 | 💝Open Source<p>
+            </div>
+            <div id="hero-image">
+                <img src="./assets/Devansu_Yadav.jpg"/>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro-section off-white">
+        <div class="container intro-container">
+            <div class="intro-content">
+                <h1 id="section-heading">Something About Me,</h1>
+                <p id="my-intro">Hello, I'm <b>Devansu</b>, a <b>Junior</b> CS undergrad from India. I am a <b>passionate self-learner</b>, 
+                   <b>Open source enthusiast</b>, exploring and building projects👨‍💻 using various technologies. <br>
+                   I 💗 to <b>solve real-world problems</b> using the the power of Technology!⚡
+                </p>
+                <ul class="intro-social-media">
+                    <li class="intro-social-list-inline">
+                        <a class="intro-icon intro-social-link" href="mailto:devansuyadav@gmail.com">
+                            <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="intro-social-list-inline">
+                        <a class="intro-icon intro-social-link" href="https://github.com/Devansu-Yadav">
+                            <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="intro-social-list-inline">
+                        <a class="intro-icon intro-social-link" href="https://www.linkedin.com/in/devansu-yadav/">
+                            <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li class="intro-social-list-inline">
+                        <a class="intro-icon intro-social-link" href="https://twitter.com/DevanshYtweets">
+                            <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                        </a>
+                    </li>
+    
+                    <li class="intro-social-list-inline">
+                        <a class="intro-icon intro-social-link" href="https://devansuyadav.medium.com/">
+                            <ion-icon name="logo-medium" role="img" class="md hydrated" aria-label="logo medium"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="learn-more">
+                <a class="link-1 link primary-link" href="/">Learn more about Me</a>
+                <a class="link-2 link primary-link" href="/">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section-home">
+        <ul class="list-non-bullet">
+            <h1 id="blog-section-heading-home">Some of my Blogs</h1>
+            <li>
+                <article class="blog-post container container-center">
+                    <a href="">
+                        <img class="blog-img" src="assets/blog-1.png" width="600px" height="300px">
+                    </a>
+                    <p class="blog-post-date">
+                        Posted on
+                        <time datetime="2021-07-14">14-07-2021</time>
+                        <span> • 6 min read</span>
+                    </p>
+                    <a class="link post-link" href="">
+                        <h2 class="blog-post-heading">A Simple Guide to Publishing and maintaining a Python Package on PyPI</h2>
+                    </a>
+                </article>
+            </li>
+
+            <li>
+                <article class="blog-post container container-center">
+                    <a href="">
+                        <img class="blog-img" src="assets/blog-2.png" width="600px" height="300px">
+                    </a>
+                    
+                    <p class="blog-post-date">
+                        Posted on
+                        <time datetime="2021-07-14">10-07-2021</time>
+                        <span> • 5 min read</span>
+                    </p>
+
+                    <a class="link post-link" href="">
+                        <h2 class="blog-post-heading">Useful Git Commands that can help you in your Open Source Journey👨‍💻</h2>
+                    </a>
+                </article>
+            </li>
+        </ul>
+        <div class="view-more-blogs container-center">
+            <a class="more-blogs-link link primary-link" href="/">View More Blogs</a>
+        </div>
+    </section>
+
+    <!-- Contact section-->
+    <section class="contact-section off-white">
+        <div class="flexed-contact-div">
+            <div class="contact">
+                <h2 id="contact-heading">Let's Talk</h2>
+                <div>
+                    <h2 id="contact">
+                        Want to Connect? 
+                        <br>
+                         My Inbox is always open!
+                    </h2>
+                    <ul class="social-media">
+                        <li class="social-list-inline">
+                            <a class="icon social-link" href="mailto:devansuyadav@gmail.com">
+                                <ion-icon name="mail-outline" role="img" class="md hydrated" aria-label="mail outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="social-list-inline">
+                            <a class="icon social-link" href="https://github.com/Devansu-Yadav">
+                                <ion-icon name="logo-github" role="img" class="md hydrated" aria-label="logo github"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="social-list-inline">
+                            <a class="icon social-link" href="https://www.linkedin.com/in/devansu-yadav/">
+                                <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                            </a>
+                        </li>
+    
+                        <li class="social-list-inline">
+                            <a class="icon social-link" href="https://twitter.com/DevanshYtweets">
+                                <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter"></ion-icon>
+                            </a>
+                        </li>
+    
+                        <li class="social-list-inline">
+                            <a class="icon social-link" href="https://devansuyadav.medium.com/">
+                                <ion-icon name="logo-medium" role="img" class="md hydrated" aria-label="logo medium"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img id="contact-img" src="assets/contact-image.svg" width="550px" height="400px">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container-center">
+            <p>Made with ❤️ by <a class="footer-link" href="https://github.com/Devansu-Yadav">Devansu Yadav</a></p>
+        </div>
+    </footer>
+
 </body>
-</html>
