@@ -9,6 +9,10 @@
     --blog-post-date-color: #999;
 } */
 
+* {
+    scroll-behavior: smooth!important;
+}
+
 /** Body **/
 body {
     font-family: 'Poppins', sans-serif;
