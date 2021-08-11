@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
-
 * {
     scroll-behavior: smooth!important;
 }
@@ -280,238 +279,317 @@ body.dark-mode .toggle::before {
     }
 }
 
-/** Blog section Homepage **/
-.blog-section-home {
-    padding: 1rem 2rem;
+
+/** Intro Section **/
+.intro-section {
+    padding: 0rem 4rem 0rem 4rem;
+    margin: 2rem auto;
+    width: 70vw;
 }
 
-.blog-section-home .container-center {
-    max-width: 600px;
+body.dark-mode .intro-section {
+    color: var(--text-color);
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-container .intro-img {
+    margin: auto;
+    text-align: center;
+}
+
+.intro-content #intro-heading {
+    font-size: 2rem;
+}
+
+.intro-img img {
+    height: 257px;
+    width: 248px;
+    border-radius: 50%;
+    border: 0.5px solid gray;
+}
+
+body.dark-mode .intro-img img {
+    padding: 0.5rem;
+    border: 2px solid var(--text-color);
+}
+
+.intro-container .intro-content {
+    margin: 1rem 2rem;
+}
+
+.intro-content .intro {
+    font-size: 1.1rem;
+}
+
+.intro li {
+    padding: 0.3rem 0rem;
+}
+
+.intro #know-me {
+    color: var(--text-color);
+}
+
+.intro-container .view-resume {
     margin: auto;
 }
 
-.blog-section-home .list-non-bullet {
-    padding-left: 0;
+.view-resume a {
+    display: block;
 }
 
-#blog-section-heading-home {
-    font-size: 3rem;
-    text-align: center;
+.view-resume .link-1 {
+    width: fit-content;
 }
 
-body.dark-mode #blog-section-heading-home {
-    color: var(--text-color);
-    transition: color 0.5s;
-}
-
-.blog-section-home .blog-post {
-    padding: 1.5rem;
-    border: 2px solid var(--text-color);
-    border-radius: 1.5rem;
-}
-
- .blog-section-home .blog-post:hover {
-    background-color: var(--heading-text-color);
-}
-
- .blog-section-home .blog-post:hover .blog-post-date {
-    color: var(--bkg-color);
-}
-
- .blog-section-home .blog-post:hover img {
-    border: none;
-}
-
- .blog-section-home .blog-post:hover .post-link {
-    color: var(--bkg-color);
-}
-
- .blog-section-home .blog-post:hover .post-link:hover {
+.view-resume a:hover {
     color: var(--primary-color);
+    background-color: var(--bkg-color);
+    border: 1px solid var(--primary-color);
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
 }
 
-body.dark-mode .blog-section-home .blog-post {
-    border: 2px solid var(--text-color);
-    border-radius: 1.5rem;
-    background-color: var(--nav-bg-color);
-}
-
-body.dark-mode .blog-section-home .blog-post:hover {
+body.dark-mode .view-resume a:hover {
     background-color: var(--text-color);
+    transition: background-color 0.5s;
 }
 
-body.dark-mode .blog-section-home .blog-post:hover .blog-post-date {
-    color: var(--bkg-color);
-}
 
-body.dark-mode .blog-section-home .blog-post:hover img {
-    border: none;
-}
-
-body.dark-mode .blog-section-home .blog-post:hover .post-link {
-    color: var(--bkg-color);
-}
-
-body.dark-mode .blog-section-home .blog-post:hover .post-link:hover {
-    color: var(--primary-color);
-}
-
-.blog-section-home li {
+/* Skills section */
+#skills-heading {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 3rem 0rem 0rem 0rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
-    margin: 2rem 0rem;
+    background-color: var(--off-white);
 }
 
-.blog-post .blog-post-date {
-    color: var(--blog-post-date-color);
-    font-size: 0.9rem;
-    margin-top: 2rem;
-    font-style: italic;
-    text-align: left;
-    padding-left: 2.5rem;
-    transition: color 0.5s;
+body.dark-mode #skills-heading {
+    background-color: var(--secondary-color);
 }
 
-body.dark-mode .blog-post img {
-    border: 1px solid var(--border-color);
-    transition: border 0.5s;
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 0rem 0rem 3rem 0rem;
 }
 
-.blog-post .post-link {
-    color: var(--blog-post-link);
-    transition: color 0.5s;
+body.dark-mode .skills-section {
+    background-color: var(--secondary-color);
 }
 
-.blog-post .post-link:hover {
-    color: var(--primary-color);
-    transition: color 0.6s;
+.skills-section .languages {
+    width: 22%;
+    margin: 1rem;
 }
 
-.blog-post .link {
-    text-decoration: none;
-    padding: 0;
+.languages .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem;
 }
 
-.blog-post .blog-post-heading {
-    text-align: left;
-    padding-left: 2.5rem;
+.languages .icon-box:hover {
+    background-color: var(--bkg-color);
+    transition: ease-in-out 0.3s;
 }
 
-/** Responsive CSS for Blogs section**/
-@media only screen and (max-width: 850px) {
-    .section .list-non-bullet {
-        padding: 0rem 1rem;
-    }
-
-    .blog-post .blog-img {
-        width: 500px;
-        height: 250px;
-    }
-
-    .blog-post .blog-4-img {
-        width: 500px;
-        height: 146px;
-    }
-
-    .blog-post .blog-post-heading {
-        font-size: 1.4rem;
-    }
-}
- 
-@media only screen and (max-width: 635px) {
-    .blog-section-home .container-center {
-        max-width: 450px;
-    }
-
-    .blog-post .blog-img {
-        width: 400px;
-        height: 200px;
-    }
-
-    .blog-post .blog-4-img {
-        width: 400px;
-        height: 117px;
-    }
-
-    .blog-post .blog-post-heading {
-        font-size: 1.2rem;
-    }
-
-    .blog-section-home #blog-section-heading-home {
-        font-size: 2rem;
-        font-weight: 900;
-    }
-
-    .blog-section-home .blog-post {
-        padding: 1.5rem 1.2rem;
-    }
+body.dark-mode .languages .icon-box {
+    background: var(--bkg-color);
 }
 
-@media only screen and (max-width: 540px) {
-    .blog-section-home .container-center {
-        max-width: 300px;
+body.dark-mode .languages .icon-box:hover {
+    background-color: var(--text-color);
+    transition: ease-in-out 0.3s;
+}
+
+.icon-box h3 {
+    font-weight: 500;
+    padding-left: 0.5rem;
+    line-height: 1;
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+body.dark-mode .languages .icon-box:hover h3 {
+    color: var(--bkg-color);
+}
+
+.icon-box .tech-icon {
+    height: 20px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* Tools section */
+#tools-heading {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 3rem 0rem 0rem 0rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.tools-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.tools-section .languages {
+    width: 22%;
+    margin: 1rem;
+}
+
+.tools-section .languages .icon-box:hover {
+    background-color: var(--off-white);
+    transition: ease-in-out 0.3s;
+}
+
+/* Communities section */
+.communities {
+    margin: 3rem 0rem;
+}
+
+body.dark-mode .communities {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.communities #communities-heading {
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 2rem;
+}
+
+.communities .community-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.community-logos img {
+    max-width: 30vw;
+    max-height: 30vh;
+    width: auto;
+    height: auto;
+    margin: 2rem;
+}
+
+/* Responsive CSS for All sections */
+@media only screen and (max-width: 720px) {
+    .intro-section {
+        width: 80vw;
     }
 
-    .blog-section-home #blog-section-heading-home {
+    .skills-section .languages {
+        width: 32%;
+    }
+
+    .tools-section .languages {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    .intro-section {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .intro-content #intro-heading {
         font-size: 1.5rem;
     }
 
-    .blog-post .blog-img {
-        width: 300px;
-        height: 150px;
+    .intro-content .intro {
+        font-size: 1rem;
     }
 
-    .blog-post .blog-4-img {
-        width: 300px;
-        height: 87.5px;
+    .skills-section .languages {
+        width: 40%;
     }
 
-    .blog-post .blog-post-heading {
-        font-size: 1.1rem;
-        padding-left: 1.5rem;
+    .tools-section .languages {
+        width: 40%;
     }
 
-    .blog-post .blog-post-date {
-        font-size: 0.6rem;
-        margin-top: 1rem;
-        padding-left: 1.5rem;
+    .icon-box h3 {
+        font-size: 1rem;
+    }
+
+    #skills-heading {
+        font-size: 1.5rem;
+    }
+
+    #tools-heading {
+        font-size: 1.5rem;
+    }
+
+    .communities #communities-heading {
+        font-size: 1.5rem;
+    }
+
+    .community-logos img {
+        max-width: 40vw;
+        max-height: 40vh;
     }
 }
 
-
-@media only screen and (max-width: 400px) {
-    .blog-section-home {
-        padding: 1rem;
+@media only screen and (max-width: 450px) {
+    .intro-section {
+        padding: 0rem 1rem 0rem 1rem;
     }
 
-    .blog-section-home li {
-        margin-bottom: 1rem;
+    .intro-content {
+        margin: 1rem;
     }
 
-    .blog-section-home .container-center {
-        max-width: 250px;
-    }
-    
-    .blog-section-home #blog-section-heading-home {
+    .intro-content #intro-heading {
         font-size: 1.3rem;
     }
-    
-    .blog-post .blog-img {
-        width: 250px;
-        height: 125px;
+
+    .intro-img img {
+        width: 190px;
+        height: 193px;
     }
 
-    .blog-post .blog-4-img {
-        width: 250px;
-        height: 73px;
+    .intro-content .intro {
+        font-size: 0.8rem;
+        padding-left: 0;
     }
 
-    .blog-post .blog-post-heading {
+    .view-resume a {
         font-size: 1rem;
-        padding-left: 0.5rem;
     }
 
-    .blog-post .blog-post-date {
-        padding-left: 0.5rem;
+    .tools-section .languages  {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .intro-section {
+        width: 92vw;
+    }
+
+    .skills-section .languages {
+        width: 55%;        
     }
 }
 
@@ -521,7 +599,7 @@ body.dark-mode .blog-post img {
     color: white;
     padding: 0.5rem 0rem;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 body.dark-mode .footer {
@@ -583,7 +661,6 @@ body.dark-mode .footer-content .other-page-social-list-inline .icon ion-icon:hov
 body.dark-mode .footer-content .footer-link {
     color: var(--text-color);
 } 
-
 .footer-content .other-page-social-list-inline .social-link {
     text-decoration: none;
 }
