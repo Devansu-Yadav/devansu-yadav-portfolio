@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 
 * {
     scroll-behavior: smooth!important;
@@ -6,7 +6,8 @@
 
 /** Body **/
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
     --text-color: #222;
     --bkg-color: #fff;
     --primary-color: #3B82F6;
@@ -279,323 +280,124 @@ body.dark-mode .toggle::before {
     }
 }
 
-
-/** Intro Section **/
-.intro-section {
-    padding: 0rem 4rem 0rem 4rem;
-    margin: 2rem auto;
-    width: 70vw;
+/* Blog post */
+.blog {
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem auto 2rem auto;
 }
 
-body.dark-mode .intro-section {
-    color: var(--text-color);
-    transition: color 0.5s, background-color 0.5s, border 0.5s;
-}
-
-.intro-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.intro-container .intro-img {
-    margin: auto;
-    text-align: center;
-}
-
-.intro-content #intro-heading {
-    font-size: 2rem;
-}
-
-.intro-img img {
-    height: 257px;
-    width: 248px;
-    border-radius: 50%;
-    border: 0.5px solid gray;
-}
-
-body.dark-mode .intro-img img {
-    padding: 0.5rem;
-    border: 2px solid var(--text-color);
-}
-
-.intro-container .intro-content {
-    margin: 1rem 2rem;
-}
-
-.intro-content .intro {
-    font-size: 1.1rem;
-}
-
-.intro li {
-    padding: 0.3rem 0rem;
-}
-
-.intro #know-me {
-    color: var(--text-color);
-}
-
-.intro-container .view-resume {
-    margin: auto;
-}
-
-.view-resume a {
-    display: block;
-}
-
-.view-resume .link-1 {
-    width: fit-content;
-}
-
-.view-resume a:hover {
-    color: var(--primary-color);
-    background-color: var(--bkg-color);
-    border: 1px solid var(--primary-color);
-    transition: color 0.5s, background-color 0.5s, border 0.5s;
-}
-
-body.dark-mode .view-resume a:hover {
-    background-color: var(--text-color);
-    transition: background-color 0.5s;
-}
-
-
-/* Skills section */
-#skills-heading {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin: 3rem 0rem 0rem 0rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
-    background-color: var(--off-white);
-}
-
-body.dark-mode #skills-heading {
-    background-color: var(--secondary-color);
-}
-
-.skills-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid var(--border-color);
-    padding: 1rem 2rem;
-    margin: 0rem 0rem 3rem 0rem;
-}
-
-body.dark-mode .skills-section {
-    background-color: var(--secondary-color);
-}
-
-.skills-section .languages {
-    width: 22%;
-    margin: 1rem;
-    border: 1px solid var(--border-color);
-}
-
-.languages .icon-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0rem 1rem;
-}
-
-.languages .icon-box:hover {
-    background-color: var(--bkg-color);
-    transition: ease-in-out 0.3s;
-}
-
-body.dark-mode .languages .icon-box {
-    background: var(--bkg-color);
-}
-
-body.dark-mode .languages .icon-box:hover {
-    background-color: var(--text-color);
-    transition: ease-in-out 0.3s;
-}
-
-.icon-box h3 {
-    font-weight: 500;
-    padding-left: 0.5rem;
-    line-height: 1;
-    font-size: 1.3rem;
-    color: var(--text-color);
-}
-
-body.dark-mode .languages .icon-box:hover h3 {
-    color: var(--bkg-color);
-}
-
-.icon-box .tech-icon {
-    height: 20px;
-    vertical-align: middle;
-    border-style: none;
-}
-
-/* Tools section */
-#tools-heading {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin: 3rem 0rem 0rem 0rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-
-.tools-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 2rem;
-    margin: 0rem 0rem 3rem 0rem;
-}
-
-.tools-section .languages {
-    width: 22%;
-    margin: 1rem;
-    border: 1px solid var(--border-color);
-}
-
-.tools-section .languages .icon-box:hover {
-    background-color: var(--off-white);
-    transition: ease-in-out 0.3s;
-}
-
-/* Communities section */
-.communities {
-    margin: 3rem 0rem;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-body.dark-mode .communities {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-
-.communities #communities-heading {
-    text-align: center;
+.blog .blog-heading {
     padding: 2rem 0rem;
-    font-size: 2rem;
 }
 
-.communities .community-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+.blog-heading .blog-post-heading {
+    font-size: 2.9rem;
+    color: var(--text-color);
+    margin: 0;
 }
 
-.community-logos img {
-    max-width: 30vw;
-    max-height: 30vh;
-    width: auto;
-    height: auto;
-    margin: 2rem;
+.blog-heading .blog-post-date {
+    color: var(--blog-post-date-color);
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: left;
+    transition: color 0.5s;
 }
 
-/* Responsive CSS for All sections */
-@media only screen and (max-width: 720px) {
-    .intro-section {
-        width: 80vw;
-    }
+.blog #cover-img {
+    width: 85%;
+    padding: 1rem;
+}
 
-    .skills-section .languages {
-        width: 32%;
-    }
+.blog .blog-content {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    word-wrap: break-word;
+    width: 95%;
+}
 
-    .tools-section .languages {
-        width: 30%;
+.blog-content img {
+    width: 90%;
+    margin: 1rem 0rem;
+}
+
+body.dark-mode .blog-content img {
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.blog-content a {
+    color: var(--text-color);
+}
+
+.blog-content pre {
+    color: rgb(197, 200, 198); 
+    text-shadow: rgb(0 0 0 / 30%) 0px 1px;
+    font-size: 0.8em;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+    padding: 1rem;
+    margin: 0.5em 0px;
+    overflow: auto;
+    border-radius: 0.3em;
+    background: rgb(29, 31, 33);
+}
+
+blockquote p {
+    border-left: 2px solid var(--text-color);
+    padding-left: 1rem;
+}
+
+/* Responsive CSS for Blog content*/
+@media only screen and (max-width: 850px) {
+    .blog {
+        width: 75%;
     }
 }
 
-@media only screen and (max-width: 586px) {
-    .intro-section {
-        padding: 0rem 2rem 0rem 2rem;
+@media only screen and (max-width: 680px) {
+    .blog .blog-content {
+        font-size: 1.1rem;
     }
 
-    .intro-content #intro-heading {
-        font-size: 1.5rem;
+    .blog-heading .blog-post-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .blog {
+        width: 85%;
+        padding: 0;
     }
 
-    .intro-content .intro {
+    .blog .blog-content {
         font-size: 1rem;
     }
 
-    .skills-section .languages {
-        width: 40%;
+    .blog-heading .blog-post-heading {
+        font-size: 1.8rem;
     }
 
-    .tools-section .languages {
-        width: 40%;
+    .blog-heading .blog-post-date {
+        font-size: 0.8rem;
     }
 
-    .icon-box h3 {
-        font-size: 1rem;
-    }
-
-    #skills-heading {
-        font-size: 1.5rem;
-    }
-
-    #tools-heading {
-        font-size: 1.5rem;
-    }
-
-    .communities #communities-heading {
-        font-size: 1.5rem;
-    }
-
-    .community-logos img {
-        max-width: 40vw;
-        max-height: 40vh;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .intro-section {
-        padding: 0rem 1rem 0rem 1rem;
-    }
-
-    .intro-content {
-        margin: 1rem;
-    }
-
-    .intro-content #intro-heading {
+    .blog-content h2 {
         font-size: 1.3rem;
     }
 
-    .intro-img img {
-        width: 190px;
-        height: 193px;
-    }
-
-    .intro-content .intro {
-        font-size: 0.8rem;
-        padding-left: 0;
-    }
-
-    .view-resume a {
-        font-size: 1rem;
-    }
-
-    .tools-section .languages  {
-        width: 55%;
-    }
-}
-
-@media only screen and (max-width: 366px) {
-    .intro-section {
-        width: 92vw;
-    }
-
-    .skills-section .languages {
-        width: 55%;        
+    blockquote {
+        margin-left: 0.3rem;
     }
 }
 
