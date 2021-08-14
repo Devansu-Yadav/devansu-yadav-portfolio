@@ -297,13 +297,13 @@ body.dark-mode .toggle::before {
     margin: 0;
 }
 
-.blog-heading .blog-post-date {
+/* .blog-heading .blog-post-date {
     color: var(--blog-post-date-color);
     font-size: 1.1rem;
     margin-top: 2rem;
     text-align: left;
     transition: color 0.5s;
-}
+} */
 
 .blog #cover-img {
     width: 85%;
@@ -416,9 +416,9 @@ figure figcaption {
         font-size: 1.8rem;
     }
 
-    .blog-heading .blog-post-date {
+    /* .blog-heading .blog-post-date {
         font-size: 0.8rem;
-    }
+    } */
 
     .blog-content h2 {
         font-size: 1.3rem;
