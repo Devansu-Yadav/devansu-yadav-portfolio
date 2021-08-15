@@ -470,11 +470,11 @@ body.dark-mode .project-wrapper .project-content:hover .project-btns a {
     }
 
     .project-btns .live-project {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .project-btns .view-src {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -483,13 +483,13 @@ body.dark-mode .project-wrapper .project-content:hover .project-btns a {
         font-size: 0.6rem;
     }
 
+    .project-btns .view-src {
+        font-size: 0.6rem;
+    }
+
     .project-content .img {
         width: 162px!important;
         height: 367px;
-    }
-
-    .project-btns .view-src {
-        font-size: 0.6rem;
     }
 
     .project-content .project-img {
