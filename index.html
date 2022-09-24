@@ -42,7 +42,11 @@
     <header class="hero-container">
         <div class="hero">
             <div>
-                <h1 id="header-name">Devansu Yadav</h1>
+                <h1 class="typing-container">
+                    <span id="sentence" class="header-name"></span>
+                    <span class="input-cursor"></span>     
+                </h1>
+                <script type="text/javascript" src="src/js/typingEffect.js"></script>
                 <p id="header-tagline">Web Developer | Hackathons👨‍💻 | 💝Open Source<p>
             </div>
             <div id="hero-image">
@@ -51,11 +55,22 @@
         </div>
     </header>
 
+    <script>
+        (async function() {
+            while(true) {
+                await typeSentence("Devansu Yadav", document.querySelector("#sentence"));
+                await waitForMs(1500);
+                await deleteSentence(document.querySelector("#sentence"));
+                await waitForMs(500);
+            }
+        })();
+    </script>
+
     <section class="intro-section off-white">
         <div class="container intro-container">
             <div class="intro-content">
                 <h1 id="section-heading">Something About Me,</h1>
-                <p id="my-intro">Hello, I'm <b>Devansu</b>, a <b>Junior</b> CS undergrad from India. I am a <b>passionate self-learner</b>, 
+                <p id="my-intro">Hello, I'm <b>Devansu</b>, a <b>Senior year</b> CS undergrad from India. I am a <b>passionate self-learner</b>, 
                    <b>Open source enthusiast</b>, exploring and building projects👨‍💻 using various technologies. <br>
                    I 💗 to <b>solve real-world problems</b> using the the power of Technology!⚡
                 </p>
@@ -101,7 +116,7 @@
             <h1 id="blog-section-heading-home">Some of my Blogs</h1>
             <li>
                 <article class="blog-post container container-center">
-                    <a href="">
+                    <a href="/guide-to-publishing-and-maintaining-python-packages.html">
                         <img class="blog-img" src="assets/blog-3.png" width="600px" height="300px">
                     </a>
                     <p class="blog-post-date">
@@ -109,7 +124,7 @@
                         <time datetime="2021-07-14">14-07-2021</time>
                         <span> • 6 min read</span>
                     </p>
-                    <a class="link post-link" href="">
+                    <a class="link post-link" href="/guide-to-publishing-and-maintaining-python-packages.html">
                         <h2 class="blog-post-heading">A Simple Guide to Publishing and maintaining a Python Package on PyPI</h2>
                     </a>
                 </article>
@@ -117,7 +132,7 @@
 
             <li>
                 <article class="blog-post container container-center">
-                    <a href="">
+                    <a href="/useful-git-commands.html">
                         <img class="blog-img" src="assets/blog-1.png" width="600px" height="300px">
                     </a>
                     
@@ -127,7 +142,7 @@
                         <span> • 5 min read</span>
                     </p>
 
-                    <a class="link post-link" href="">
+                    <a class="link post-link" href="/useful-git-commands.html">
                         <h2 class="blog-post-heading">Useful Git Commands that can help you in your Open Source Journey👨‍💻</h2>
                     </a>
                 </article>
