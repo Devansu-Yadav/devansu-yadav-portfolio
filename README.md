@@ -1,6 +1,6 @@
 <h1 align="center">My Portfolio</h1>
 
-<p align="center"><font size="4">My portfolio for neoGcamp Level Zero👨‍💻</font></p>
+<p align="center"><font size="4">My portfolio after neoGcamp Level Zero and Level One👨‍💻</font></p>
 
 <h1 align="center">Projects👨‍💻</h1>
 
@@ -52,21 +52,27 @@
     <font size="4">12. <b>Stock- Profit Or Loss</b> (<b>Mark-14</b>)
     <a href="https://stonks-profit-loss.netlify.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/Stock-profit-loss">📂Github Repo</a></font>
+    <br>
     <font size="4">13. <b>Sapphire: CSS Component Lib</b>
     <a href="https://sapphire-ui.netlify.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/Sapphire">📂Github Repo</a></font>
+    <br>
     <font size="4">14. <b>BlueKart: Ecommerce Store</b>
     <a href="https://bluekart-react.netlify.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/BlueKart-React">📂Github Repo</a></font>
+    <br>
     <font size="4">15. TechTv: Video Library<b></b>
     <a href="https://techtv.netlify.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/TechTv">📂Github Repo</a></font>
+    <br>
     <font size="4">16. Bluemodoro App<b></b>
     <a href="https://bluemodoro-app.netlify.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/Bluemodoro-App">📂Github Repo</a></font>
+    <br>
     <font size="4">17. The Social Network<b></b>
     <a href="https://thesocialnetwork.vercel.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/The-Social-Network">📂Github Repo</a></font>
+    <br>
     <font size="4">18. Webpack Starter Kit<b></b>
     <a href="https://webpack-starter-kit.vercel.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/Webpack-starter-kit">📂Github Repo</a></font>
