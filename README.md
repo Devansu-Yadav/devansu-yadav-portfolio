@@ -52,6 +52,24 @@
     <font size="4">12. <b>Stock- Profit Or Loss</b> (<b>Mark-14</b>)
     <a href="https://stonks-profit-loss.netlify.app/">Live Project</a>
     <a href="https://github.com/Devansu-Yadav/Stock-profit-loss">📂Github Repo</a></font>
+    <font size="4">13. <b>Sapphire: CSS Component Lib</b>
+    <a href="https://sapphire-ui.netlify.app/">Live Project</a>
+    <a href="https://github.com/Devansu-Yadav/Sapphire">📂Github Repo</a></font>
+    <font size="4">14. <b>BlueKart: Ecommerce Store</b>
+    <a href="https://bluekart-react.netlify.app/">Live Project</a>
+    <a href="https://github.com/Devansu-Yadav/BlueKart-React">📂Github Repo</a></font>
+    <font size="4">15. TechTv: Video Library<b></b>
+    <a href="https://techtv.netlify.app/">Live Project</a>
+    <a href="https://github.com/Devansu-Yadav/TechTv">📂Github Repo</a></font>
+    <font size="4">16. Bluemodoro App<b></b>
+    <a href="https://bluemodoro-app.netlify.app/">Live Project</a>
+    <a href="https://github.com/Devansu-Yadav/Bluemodoro-App">📂Github Repo</a></font>
+    <font size="4">17. The Social Network<b></b>
+    <a href="https://thesocialnetwork.vercel.app/">Live Project</a>
+    <a href="https://github.com/Devansu-Yadav/The-Social-Network">📂Github Repo</a></font>
+    <font size="4">18. Webpack Starter Kit<b></b>
+    <a href="https://webpack-starter-kit.vercel.app/">Live Project</a>
+    <a href="https://github.com/Devansu-Yadav/Webpack-starter-kit">📂Github Repo</a></font>
 </p>
 
 <h1 align="center">Blogs✍</h1>
@@ -67,5 +85,17 @@
     <br>
     <font size="4">3. <b>My experience so far contributing to Checkstyle OSS so far - (Part 1)</b> (<b>Mark-15</b>)
     <a href="https://devansuyadav-portfolio.netlify.app/my-experience-contributing-to-checkstyle-part-1.html">Read Blog</a>
+    </font>
+    <br>
+    <font size="4">4. <b>Everything you need to know about Generators in JavaScript 🚀</b>
+    <a href="https://dev.to/devansuyadav/everything-you-need-to-know-about-generators-in-javascript-2h5b">Read Blog</a>
+    </font>
+    <br>
+    <font size="4">5. <b>Make Your React Apps More Performant using Debouncing & Throttling 🔥🚀</b>
+    <a href="https://javascript.plainenglish.io/make-your-react-apps-more-performant-using-debouncing-throttling-f90bb4c36855">Read Blog</a>
+    </font>
+    <br>
+    <font size="4">6. <b>What the Heck is a ‘Thunk’ and What’s ‘Currying’ in JavaScript?</b>
+    <a href="https://javascript.plainenglish.io/what-the-heck-is-a-thunk-and-what-s-currying-5b166c8a25a9">Read Blog</a>
     </font>
 </p>
